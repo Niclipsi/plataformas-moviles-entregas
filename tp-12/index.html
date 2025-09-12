@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        .active{
+            background-color: #09ff00 !important;
+            color: white;
+        }
+    </style>
+    <div class="container my-4">
+    <h1>Editor de Texto</h1>
+    <div class="card">
+      <div class="card-body">
+        <h2>Texto</h2>
+        <p class="texto" id="texto" style="transition: all 0.2s ease;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum auctor libero, vel imperdiet est.
+        </p>
+
+        <h6 id="contador-caracteres" class="text-muted">Caracteres: 0</h6>
+
+        <hr class="hr">
+
+        <h2>Editar Texto</h2>
+        <textarea id="input-texto" class="form-control mb-3" rows="3"></textarea>
+        <button class="btn btn-secondary mb-3" id="btn-actualizar">Actualizar</button>
+
+        <h2>Opciones de Formato</h2>
+        <div class="row">
+          <div class="col-12 col-md-4 my-1">
+            <button id="btn-negrita" class="btn d-block w-100 btn-primary" data-formato="negrita">
+              Bold (Negrita)
+            </button>
+          </div>
+          <div class="col-12 col-md-4 my-1">
+            <button id="btn-cursiva" class="btn d-block w-100 btn-primary" data-formato="cursiva">
+              Italic (Cursiva)
+            </button>
+          </div>
+          <div class="col-12 col-md-4 my-1">
+            <button id="btn-subrayado" class="btn d-block w-100 btn-primary" data-formato="subrayado">
+              Underline (Subrayado)
+            </button>
+          </div>
+          <div class="col-12 col-md-6 my-1">
+            <button id="btn-color" class="btn d-block w-100 btn-primary" data-formato="color">
+              Cambiar color
+            </button>
+          </div>
+          <div class="col-12 col-md-6 my-1">
+            <select id="selector-tamano" class="form-select">
+              <option value="16px">Tamaño: 16px</option>
+              <option value="20px">Tamaño: 20px</option>
+              <option value="24px">Tamaño: 24px</option>
+              <option value="28px">Tamaño: 28px</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
